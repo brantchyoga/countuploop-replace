@@ -20,16 +20,15 @@ $(function(){
     event.preventDefault();
     var sentence = $("#sentence").val();
     console.log(sentence);
-    var vowels = ["a", "o", "i", "u", "e"]
     sentence = sentence.replace(/[aeuoi]/gi, "-");
-    for(var i=0;i<=sentence.length; i++){
-      sentence = sentence.replace("a", "-")
-      sentence = sentence.replace("e", "-")
-      sentence = sentence.replace("i", "-")
-      sentence = sentence.replace("o", "-")
-      sentence = sentence.replace("u", "-")
-      console.log(sentence);
-    };
+    // for(var i=0;i<=sentence.length; i++){
+    //   sentence = sentence.replace("a", "-")
+    //   sentence = sentence.replace("e", "-")
+    //   sentence = sentence.replace("i", "-")
+    //   sentence = sentence.replace("o", "-")
+    //   sentence = sentence.replace("u", "-")
+      // console.log(sentence);
+    // };
     $("#output2").text(sentence);
     $("#sentence").hide();
 
